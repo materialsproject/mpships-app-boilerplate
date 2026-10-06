@@ -46,8 +46,7 @@ class {{cookiecutter.project_appname}}(MPShipsApp): # Required for MPShips funct
                     [
                         "You can see another example app in ",
                         html.Code(
-                            "{{cookiecutter.project_shortname}}/src/"
-                            "{{cookiecutter.project_shortname}}/example_pages/"
+                            "src/{{cookiecutter.project_shortname}}/example_pages/"
                         ),
                     ]
                 ),
