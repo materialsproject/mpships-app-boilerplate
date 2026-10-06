@@ -10,7 +10,7 @@ pip install cookiecutter
 ```
 2. Create a new MPShips App
 ```
-cookiecutter gh:minhsueh/mpships-app-boilerplate
+cookiecutter gh:materialsproject/mpships-app-boilerplate
 ```
 3. Customize your project by answering the following questions:
 - `project_name`: The full project name. Default: `My MPships App`
