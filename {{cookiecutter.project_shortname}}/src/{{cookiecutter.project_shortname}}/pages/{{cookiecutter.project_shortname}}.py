@@ -44,6 +44,18 @@ class {{cookiecutter.project_appname}}(MPShipsApp): # Required for MPShips funct
                 ),
                 html.P(
                     [
+                        "You can find a basic Dash tutorial at ",
+                        html.A(
+                            "dash.plotly.com/tutorial",
+                            href="https://dash.plotly.com/tutorial",
+                            target="_blank",
+                            rel="noopener noreferrer",
+                        ),
+                        ".",
+                    ]
+                ),
+                html.P(
+                    [
                         "You can see another example app in ",
                         html.Code(
                             "src/{{cookiecutter.project_shortname}}/example_pages/"
