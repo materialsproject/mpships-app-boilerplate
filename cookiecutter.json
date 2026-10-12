@@ -16,6 +16,6 @@
   ],
   "install_dependencies": true,
   "__prompts__": {
-    "install_dependencies": "Create a virtual environment and install mpships-infra? (recommended)"
+    "install_dependencies": "Create a virtual environment in your project and install mpships-infra? (recommended)"
   }
 }
