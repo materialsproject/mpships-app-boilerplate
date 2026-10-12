@@ -14,5 +14,8 @@
     "GNU General Public License v3",
     "Not open source"
   ],
-  "install_dependencies": true
+  "install_dependencies": true,
+  "__prompts__": {
+    "install_dependencies": "Create a virtual environment and install mpships-infra? (recommended)"
+  }
 }
