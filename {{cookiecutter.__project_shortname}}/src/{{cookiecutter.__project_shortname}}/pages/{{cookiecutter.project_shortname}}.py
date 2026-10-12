@@ -12,7 +12,7 @@ from dash.exceptions import PreventUpdate
 # See more information at: https://docs.materialsproject.org/downloading-data/using-the-api/getting-started
 
 
-class {{cookiecutter.project_appname}}(MPShipsApp): # Required for MPShips functionality — do not remove
+class {{cookiecutter.__project_appname}}(MPShipsApp): # Required for MPShips functionality — do not remove
     # Optional — remove if your app needs no setup, will be called in __init__
     def ships_setup(self, *args, **kwargs):
         # Example code — replace with your own layout
@@ -35,7 +35,7 @@ class {{cookiecutter.project_appname}}(MPShipsApp): # Required for MPShips funct
                     className="title is-1"
                 ),
                 html.H4(
-                    "Your ship, {{cookiecutter.project_appname}}, is now under construction."
+                    "Your ship, {{cookiecutter.__project_appname}}, is now under construction."
                 ),
                 html.H4(
                     f"I am your {self.my_role}, and I'll help you get your ship ready to sail!",
@@ -58,7 +58,7 @@ class {{cookiecutter.project_appname}}(MPShipsApp): # Required for MPShips funct
                     [
                         "You can see another example app in ",
                         html.Code(
-                            "src/{{cookiecutter.project_shortname}}/example_pages/"
+                            "src/{{cookiecutter.__project_shortname}}/example_pages/"
                         ),
                     ]
                 ),

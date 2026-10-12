@@ -3,7 +3,7 @@ CRITICAL: DO NOT EDIT. For MPShips users: Manual changes may cause system instab
 """
 
 import os
-from src.{{cookiecutter.project_shortname}}.example_app import example_app
+from src.{{cookiecutter.__project_shortname}}.example_app import example_app
 
 server = example_app.server
 

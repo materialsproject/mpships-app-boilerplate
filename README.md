@@ -14,7 +14,6 @@ cookiecutter gh:materialsproject/mpships-app-boilerplate
 ```
 3. Customize your project by answering the following questions:
 - `project_name`: The full project name. Default: `My MPships App`
-- `project_shortname`: Used as the Python package directory name. Typically the lowercase version of `project_name`, with hyphen("-") and space(" ") with underscore("_"). Default: `my_mpships_app`
 - `author_name`: Author name for `pyproject.toml` and package metadata.
 - `author_email`: Author email for pyproject.toml and package metadata.
 - `description`: A short description of your project, used in `pyproject.toml` and `README.md`.
@@ -22,9 +21,6 @@ cookiecutter gh:materialsproject/mpships-app-boilerplate
 - `license`: Choose one of the following licenses: `MIT License`, `BSD License`, `ISC License`,`Apache Software License 2.0`, `GNU General Public License v3`, `Not open source`. Default: `1` (`MIT License`)
 - `install_dependencies`: Automatically create a virtual environment and install default dependencies. Default: `y`
 4. Navigate to your project directory:
-```
-$ cd <project_shortname>
-```
 5. Activate the Virtual Environment
 If you selected `install_dependencies = y`, activate the virtual environment:
 ```

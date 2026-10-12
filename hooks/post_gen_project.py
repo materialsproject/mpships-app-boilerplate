@@ -7,7 +7,7 @@ import shutil
 import subprocess
 
 install_deps = '{{cookiecutter.install_dependencies}}'
-project_shortname = '{{cookiecutter.project_shortname}}'
+project_shortname = '{{cookiecutter.__project_shortname}}'
 
 
 is_windows = sys.platform == 'win32'

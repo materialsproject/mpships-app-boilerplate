@@ -6,7 +6,7 @@ from mpships_infra import create_app
 from . import pages
 import os
 
-endpoint = "/{{cookiecutter.project_shortname}}/"
+endpoint = "/{{cookiecutter.__project_shortname}}/"
 path_to_pages = os.path.join(os.path.dirname(__file__), "pages")
 assets_folder = os.path.join(os.path.dirname(__file__), "assets")
 

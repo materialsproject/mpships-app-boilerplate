@@ -4,7 +4,7 @@ import re
 
 full_name = '{{cookiecutter.author_name}}'
 email = '{{cookiecutter.author_email}}'
-project_shortname = '{{cookiecutter.project_shortname}}'
+project_shortname = '{{cookiecutter.__project_shortname}}'
 
 invalid_package_message = '!!! Invalid {variable}: {value}'
 project_shortname_message = '''
@@ -31,7 +31,7 @@ def check_specials_characters(s):
 for values in (
     (package_check, 'author_name', full_name, invalid_package_message),
     (package_check, 'author_email', email, invalid_package_message),
-    (check_specials_characters, 'project_shortname',
+    (check_specials_characters, '__project_shortname',
      project_shortname, project_shortname_message)
 ):
     verify(*values)
