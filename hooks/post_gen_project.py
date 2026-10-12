@@ -61,7 +61,7 @@ print('\n\nInstalling dependencies\n', file=sys.stderr)
 
 # Install Python requirements.
 _execute_command(
-    r'{} -m pip install .'.format(python_executable)
+    r'{} -m pip install . -q'.format(python_executable)
 )
 
 activate_cmd = '.venv\\Scripts\\activate' if is_windows else 'source .venv/bin/activate'
