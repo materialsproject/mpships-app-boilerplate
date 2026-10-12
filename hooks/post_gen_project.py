@@ -63,21 +63,12 @@ print('\n\nInstalling dependencies\n', file=sys.stderr)
 _execute_command(
     r'{} -m pip install .'.format(python_executable)
 )
-# print('\n[DONE] {} ready!\n'.format(project_shortname))
-# print("To get started, run the following commands:")
-# print(f"  cd {project_shortname}")
-# print(f"  {activate_cmd}")
 
-
-# enter project
-cd_command = f"cd {project_shortname}"
-_execute_command(cd_command)
-
-# source venv
 activate_cmd = '.venv\\Scripts\\activate' if is_windows else 'source .venv/bin/activate'
-_execute_command(activate_cmd)
 
 print('\n[DONE] {} ready!\n'.format(project_shortname))
-print("Run `python run_app.py` to see the app!")
+print("To get started, run the following commands:")
+print(f"  cd {project_shortname}")
+print(f"  {activate_cmd}")
 
 sys.exit(0)
